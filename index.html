@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General text styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Ensure all paragraphs are aligned with proper indentation */
+        p {
+            text-align: justify;
+            text-indent: 0; /* No indent for first line */
+            margin-left: 10%; /* Align text from the left with some margin */
+            margin-right: 10%; /* Align text from the right with some margin */
+        }
+         /* Ensuring proper alignment for list items */
+         ul {
+            list-style-position: inside;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+         li {
+           text-align: left;
+           text-indent: 0;
+           margin-left: 10%; /* Align text from the left with some margin */
+           margin-right: 10%; /* Align text from the right with some margin */
+        }
+
+        .about-section, .skills-section {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-section p {
+            margin-bottom: 10px;
+        }
+
+         /* Ensuring all form elements start from the same point */
+         form {
+            display: flex;
+            flex-direction: column;
+            width: 300px; /* Adjust width as needed */
+        }
+
+        form label, form input, form textarea {
+            margin-bottom: 10px;
+        }
+
+        form input[type="submit"] {
+            width: 100px;
+        }
+
+        h2, h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Digital Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Home Section -->
+    <section id="home">
+        <h1 style="text-align:center;">Welcome to My Digital Showcase</h1>
+        <!-- Add your image here -->
+        <img src="./images/my-photo.jpg" alt="Your Photo" style="width:150px;height:150px;display:block;margin-left:auto;margin-right:auto;">
+        
+        <!-- Brief Introduction -->
+        <p>
+            I’m Urvish Prajapati, a dedicated frontend web developer with a passion for creating dynamic web applications.
+            With years of experience in web development, I specialize in turning innovative ideas into impactful results.
+            Explore my portfolio to see how I combine creativity, technical skills, and strategic thinking to deliver exceptional outcomes.
+        </p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2 style="text-align:center;">About Me</h2>
+        <p>
+            <strong>Background:</strong> I have a background in frontend web development, where I have honed my skills in creating responsive and user-friendly applications. 
+            Over the years, I’ve worked on various projects that emphasize crafting seamless user experiences and scalable solutions.
+        </p>
+        <p>
+            <strong>Education:</strong> I am a final-year student of Computer Engineering at LDRP-ITR of KSV University, where I specialized in frontend web development.
+            My education provided me with a strong foundation in Data Science, which I have built upon in my professional career.
+        </p>
+        <p>
+            <strong>Interests:</strong> In addition to my professional work, I am passionate about exploring new technologies, staying updated with industry trends, 
+            and creative problem-solving. In my free time, I enjoy coding personal projects and reading tech blogs.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 style="text-align:center;">Skills</h2>
+        <!-- Technical Skills -->
+        <h3>Technical Skills</h3>
+        <ul class="skills-list">
+            <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript, Python</li>
+            <li><strong>Frameworks/Libraries:</strong> React.js, Vue.js, Django</li>
+            <li><strong>Tools:</strong> Git, GitHub, VSCode</li>
+            <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+            <li><strong>Other Skills:</strong> APIs, responsive design, UX/UI design</li>
+        </ul>
+
+        <!-- Soft Skills -->
+        <h3>Soft Skills</h3>
+        <ul class="skills-list">
+            <li><strong>Problem Solving:</strong> Ability to analyze and solve complex issues efficiently.</li>
+            <li><strong>Communication:</strong> Clear and effective communication in both technical and non-technical teams.</li>
+            <li><strong>Adaptability:</strong> Fast learner and capable of adjusting to new tools and technologies quickly.</li>
+            <li><strong>Project Management:</strong> Experience in leading and managing projects with cross-functional teams.</li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2 style="text-align:center;">Portfolio</h2>
+        <div class="project">
+            <h3>Project 1: Shopping cart</h3>
+            <p>A fully responsive website built using HTML, CSS, and JavaScript. It adapts seamlessly across devices.Welcome to our Shopping Cart Website, your one-stop destination for all your shopping needs. Our platform offers a seamless and intuitive shopping experience, allowing users to browse through a wide variety of products, add items to their cart, and manage their purchases effortlessly. With features like easy navigation, detailed product descriptions, secure checkout, and real-time bill updates, we prioritize customer convenience and satisfaction. Explore our vibrant collections and enjoy a hassle-free online shopping journey.
+             </p>| 
+            <a href="https://github.com/urvishprajapati/shopping-cart.git" target="_blank">GitHub Repository</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 2: Recipe Book</h3>
+            <p>At Recipe Book, we believe that cooking should be a joyful and enriching experience. Our platform is designed for food enthusiasts, whether you’re a seasoned chef or just starting your culinary journey.
+                Explore a wide variety of recipes ranging from traditional classics to modern culinary creations. Whether you’re in the mood for a hearty Spaghetti Bolognese or a delightful Chocolate Cake, we’ve got you covered!
+            </p>| 
+            <a href="https://github.com/urvishprajapati/recipe-book.git" target="_blank">GitHub Repository</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 style="text-align:center;">Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    
